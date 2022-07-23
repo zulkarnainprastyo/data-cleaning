@@ -1,0 +1,85 @@
+#!bin/bash
+
+SearchByevent_time () {
+echo "Enter the event_time to Search: "
+read event_time
+grep $event_time 2019-first-sample.csv
+}
+
+SearchByevent_type () {
+read event_type
+grep $event_type 2019-first-sample.csv
+}
+
+SearchByproduct_id () {
+read product_id
+grep $product_id2019-first-sample.csv
+}
+
+SearchBycategory_id () {
+read category_id
+grep $category_id 2019-first-sample.csv
+}
+
+SearchBybrand () {
+read brand
+grep $brand 2019-first-sample.csv
+}
+
+SearchByprice () {
+read price
+grep $price 2019-first-sample.csv
+}
+
+SearchBycategory () {
+read category
+grep $category 2019-first-sample.csv
+}
+
+SearchByproduct_name () {
+read product_name
+grep $product_name 2019-first-sample.csv
+}
+
+echo -e "Please enter your choice\n1.search by event_time\n2.search by event_type\n3.search by product_id\n4.search by category_id\\n5.search by brand\n6.search by price\n7.search by category\n8.search by product_name"
+read choice
+
+if  [$choice -eq 1 ]
+then
+SearchByevent_time
+fi
+
+if  [$choice -eq 2 ]
+then
+SearchByevent_type
+fi
+
+if  [$choice -eq 3 ]
+then
+SearchByproduct_id
+fi
+
+if  [$choice -eq 4 ]
+then
+SearchBycategory_id
+fi
+
+if  [$choice -eq 5 ]
+then
+SearchBybrand
+fi
+
+if  [$choice -eq 6 ]
+then
+SearchByprice
+fi
+
+if  [$choice -eq 7 ]
+then
+SearchBycategory
+fi
+
+if  [$choice -eq 8 ]
+then
+SearchByproduct_name
+fi
