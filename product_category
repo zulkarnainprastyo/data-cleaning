@@ -1,3 +1,6 @@
+csvcut -c event_time,event_type,product_id,category_id,category_code,brand,price 2019-Nov-sample.csv | head | csvlook
+
+#using vim
 #!bin/bash
 
 SearchByproduct_id () {
